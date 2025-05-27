@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Cambie el idioma a español -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
-    <title>APIs</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Cambie la ruta del CSS ya que no era correcta-->
+    <title>GitHub Información de usuario </title>  <!-- Cambie el title por uno más descriptivo -->
 </head>
-<body>
-    <p class="name"></p>
-    <p class="blog"></p>
 
-  <script src="../assets/js/app.js"></script>
+<body>
+  <div class="wrapper" > <!-- Añadi la clase wrapper para aplicar estilos (define margenes, padding y background) ya que es usada en el CSS -->
+    <h1>Información del usuario de GitHub</h1>
+
+    <!-- Cree una tabla para mostrar la información -->
+    <table>
+      <tr>
+        <th>Nombre:</th>
+        <td><p class="name"></p></td> 
+        <th>Blog:</th>
+        <td><p class="blog"></p></td>
+        <th>Ubicación:</th> <!-- Cambie "Location" por "Ubicación" para que sea más claro en español -->
+        <td><p class="location"></td>
+      </tr>
+    </table>
+    <button type="submit" class="button"> Buscar</button>
+
+  </div>
+    
+<!-- Modifique la ruta del js -->
+  <script src="./assets/js/app.js"></script> <!-- Cambio de ruta -->
 </body>
 </html>
+
+
+
+
